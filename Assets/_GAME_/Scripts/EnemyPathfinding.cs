@@ -23,4 +23,11 @@ public class EnemyPathfinding : MonoBehaviour
     {
         moveDirection = targetPosition;
     }
+
+    void FollowPlayer()
+    {     
+        animator.SetBool("isMoving", true);
+        Vector2 direction = (target.position - transform.position).normalized;
+        rb.velocity = direction * speed;
+    }
 }

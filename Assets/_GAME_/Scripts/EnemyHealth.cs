@@ -5,9 +5,12 @@ using UnityEngine;
 public class EnemyHealth : MonoBehaviour
 {
     [SerializeField] private int enemyHealth = 10;
+     private int currentEnemyHealth;
+    private Animator animator;
+    private Rigidbody2D rb;
+    private CircleCollider2D cCollider;
 
 
-    private int currentEnemyHealth;
 
     private void Start()
     {
@@ -24,8 +27,22 @@ public class EnemyHealth : MonoBehaviour
     {
         if(currentEnemyHealth < 0)
         {
-            Destroy(gameObject);
+            StartCoroutine(Die());
         }
+    }
+
+      IEnumerator Die()
+    {
+        animator.SetBool("isMoving", false);
+        animator.SetBool("isDefeated", true);
+      
+        rb.velocity = Vector2.zero;
+
+        cCollider.enabled = false;
+
+        yield return new WaitForSeconds(0.6f); 
+
+        Destroy(gameObject); 
     }
 }
 

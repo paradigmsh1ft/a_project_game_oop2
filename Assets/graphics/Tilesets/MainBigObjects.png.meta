@@ -264,6 +264,90 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: MainBigObjects_8
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 490
+        width: 104
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b32e45a2ba347704baa07675ecac3156
+      internalID: 1974756077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainBigObjects_9
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 486
+        width: 84
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c354a639286f3a4b926482352c5a6b3
+      internalID: -582510766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainBigObjects_10
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 528
+        width: 87
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f2e6130847ac42468036cec3f87282f
+      internalID: 641452404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainBigObjects_11
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 495
+        width: 93
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 255d9e01040501c4a811ab707f8b84bd
+      internalID: 847978559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -277,12 +361,16 @@ TextureImporter:
     nameFileIdTable:
       MainBigObjects_0: -167517460
       MainBigObjects_1: 215537725
+      MainBigObjects_10: 641452404
+      MainBigObjects_11: 847978559
       MainBigObjects_2: -1216173828
       MainBigObjects_3: -45019446
       MainBigObjects_4: 59597472
       MainBigObjects_5: 1104547615
       MainBigObjects_6: 856190203
       MainBigObjects_7: -1638293037
+      MainBigObjects_8: 1974756077
+      MainBigObjects_9: -582510766
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

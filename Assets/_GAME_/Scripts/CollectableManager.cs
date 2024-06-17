@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class CollectableManager : MonoBehaviour
 {
-    [SerializeField]int count = 0;
+    public int count = 0;
     void Start()
     {
         

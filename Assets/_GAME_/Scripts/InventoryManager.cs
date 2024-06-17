@@ -1,18 +1,31 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class InventoryManager : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    [SerializeField] UIInventory inventoryUI;
+
+    public int inventorySize = 15;
+
+    void Awake()
     {
-        
+       inventoryUI.InitializeInventoryUI(inventorySize);
     }
 
-    // Update is called once per frame
     void Update()
     {
-        
+        if(Input.GetKeyDown(KeyCode.R))
+        {
+            if(inventoryUI.isActiveAndEnabled == false)
+            {
+                inventoryUI.OpenInventory();
+            }
+            else
+            {
+                inventoryUI.HideInventory();
+            }
+        }
     }
 }

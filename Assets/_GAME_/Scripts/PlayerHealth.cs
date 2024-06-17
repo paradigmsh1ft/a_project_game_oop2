@@ -4,15 +4,14 @@ using UnityEngine;
 
 public class PlayerHealth : MonoBehaviour
 {
-
-    [SerializeField] int maxHealth = 100;
-    private int currentHealth;
+    public int maxHealth = 100;
+    public int currentHealth;
     
     private PlayerDeath playerDeath;
 
     private void Awake()
     {
-        playerDeath = GetComponent<playerDeath>();
+        playerDeath = GetComponent<PlayerDeath>();
     }
       
     void Start()

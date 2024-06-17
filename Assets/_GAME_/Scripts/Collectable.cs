@@ -4,15 +4,21 @@ using UnityEngine;
 
 public class Collectable : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    [SerializeField] MoneyManager moneyManager;
+    [SerializeField] CollectableManager collectableManager;
+    void OnTriggerEnter2D(Collider2D other)
     {
+        if(other.gameObject.CompareTag("Money"))
+        {
+            moneyManager.moneyCount++;
+            Destroy(other.gameObject);
+        }
         
+        else if(other.gameObject.CompareTag("Collectable"))
+        {
+            collectableManager.count++;
+            Destroy(other.gameObject);     
+        }
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    
 }

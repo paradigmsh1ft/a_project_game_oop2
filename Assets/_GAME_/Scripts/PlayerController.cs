@@ -5,8 +5,9 @@ using UnityEngine.InputSystem;
 
 public class PlayerController : MonoBehaviour
 {
-    [SerializeField] private float moveSpeed = 1f;
-    [SerializeField] private float fastSpeed = 2f;
+    public float playerStamina = 2f;
+    [SerializeField] float moveSpeed = 1f;
+    [SerializeField]float fastSpeed = 2f;
     private float currentMoveSpeed;
 
     private PlayerControls playerControls;
@@ -69,7 +70,20 @@ public class PlayerController : MonoBehaviour
 
     private void SpeedUp()
     {
+        if(playerStamina > 0)
+        {
         moveSpeed = moveSpeed * fastSpeed;
+        playerStamina -= Time.deltaTime * 1.5f;
+        }
+        else
+        {
+        playerStamina += Time.deltaTime * 0.4f;
+        moveSpeed = currentMoveSpeed;
+        }
+
+        if(playerStamina > 2f) 
+        playerStamina = 2f;
+
     }
 
     private void ResetSpeed()
